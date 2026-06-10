@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="DemoExam3.Elements.Item"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DemoExam3.Elements"
+             mc:Ignorable="d"  >
+    <Grid Background="Green" Margin="0,0,0,10" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="lName" Content="Наименование: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="0" />
+        <Label x:Name="lDescription" Content="Описание: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="0" Margin="0,30,0,10" />
+        <Label x:Name="lMaterial" Content="Материал: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="0" Margin="0,60,0,10" />
+        <Label x:Name="lWeight" Content="Вес: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="0" Margin="0,90,0,10" />
+        <Label x:Name="lSize" Content="Размер: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="1"  />
+        <Label x:Name="lCost" Content="Стоимость: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="1" Margin="0,30,0,10" />
+        <Label x:Name="lCategory" Content="Категория: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="1" Margin="0,60,0,10" />
+
+        <Button Click="Update" Content="Изменить" Height="40" Width="60" HorizontalAlignment="Right" 
+                VerticalAlignment="Top" Grid.Column="2" Margin="0,10,10,0" />
+        <Button Click="Delete" Content="Удалить" Height="40" HorizontalAlignment="Right" 
+                VerticalAlignment="Top" Grid.Column="2" Margin="0,10,79,0" Width="60" />
+    </Grid>
+</UserControl>

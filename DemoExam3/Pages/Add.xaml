@@ -1,0 +1,72 @@
+﻿<Page x:Class="DemoExam3.Pages.Add"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DemoExam3.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Add">
+
+    <Grid Background="White">
+        <Grid Background="Green" VerticalAlignment="Top" Height="70">
+            <Label Content="Мебельная продукция" VerticalAlignment="Center" 
+               Foreground="White" FontSize="20" FontWeight="Bold"  Margin="10"/>
+
+            <Button Click="Save" Content="Сохранить" Width="100" 
+                HorizontalAlignment="Right" Margin="10" />
+            <Button Click="Back" Content="Назад" Width="100" 
+                HorizontalAlignment="Left" Margin="575,10,0,10" />
+        </Grid>
+
+        <Grid Margin="10,90,10,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+
+            <Label x:Name="lName" Content="Наименование: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="0" />
+            <TextBox x:Name="tName" Grid.Column="0" Grid.Row="1" />
+
+            <Label x:Name="lDescription" Content="Описание: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="0" Grid.Row="2" />
+            <TextBox x:Name="tDescription" Grid.Column="0" Grid.Row="3" />
+
+            <Label x:Name="lMaterial" Content="Материал: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="0" Grid.Row="4" />
+            <TextBox x:Name="tMaterial" Grid.Column="0" Grid.Row="5" />
+
+            <Label x:Name="lWeight" Content="Вес: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="0" Grid.Row="6" />
+            <TextBox x:Name="tWeight" Grid.Column="0" Grid.Row="7" />
+
+            <Label x:Name="lSize" Content="Размер: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="2" Grid.Row="0" />
+            <TextBox x:Name="tSize" Grid.Column="2" Grid.Row="1" />
+
+            <Label x:Name="lCost" Content="Стоимость: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="2" Grid.Row="2" />
+            <TextBox x:Name="tCost" Grid.Column="2" Grid.Row="3" />
+
+            <Label x:Name="lCategory" Content="Категория: " VerticalAlignment="Top" 
+               FontSize="16" Height="30" Grid.Column="2" Grid.Row="4" />
+            <ComboBox x:Name="tCategory" Grid.Column="2" Grid.Row="5" />
+        </Grid>
+
+
+
+    </Grid>
+</Page>
